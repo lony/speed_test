@@ -3,6 +3,7 @@ Speed Test
 
 Tool retrieves performance metrics testing against preset offside servers. The tool also gatherers devices in the local network which could interfere with your test results. Last but not least the metrics are send to a predefined Google Sheet.
 
+
 # Feature
 
 * Use [speedtest-cli](https://github.com/sivel/speedtest-cli) to test against [servers around the world](http://www.speedtest.net)
@@ -12,6 +13,16 @@ Tool retrieves performance metrics testing against preset offside servers. The t
 * Use [nmap](https://nmap.org/) to detected other systems in your network
 * Upload data to a [Google Sheet](https://www.google.com/sheets/about/)
     * Authenticate using service account
+
+**Output Example**
+
+| Datetime            | Hosts | Ping    | Upload      | Bytes_sent | Download    | Bytes_Recived |
+|---------------------|-------|---------|-------------|------------|-------------|---------------|
+| 2018-01-14T04:00:03 | 5     | 195,063 | 8275863,909 | 10543104   | 37012522,13 | 48261155      |
+| 2018-01-14T05:00:02 | 4     | 188,495 | 8988076,69  | 11419648   | 39828286,1  | 51851794      |
+| 2018-01-14T06:00:03 | 4     | 191,288 | 8423028,37  | 10706944   | 38117436,57 | 48588272      |
+| 2018-01-14T07:00:02 | 6     | 192,431 | 8140989,79  | 10412032   | 40067664,01 | 51025955      |
+
 
 # Run
 
@@ -32,6 +43,7 @@ Tool retrieves performance metrics testing against preset offside servers. The t
     * `source venv/bin/activate`
 * Install python packages `pip install -r requirements.txt`
 * `./speed_test.py`
+
 
 # Automate (on Raspberry)
 
