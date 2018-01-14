@@ -1,0 +1,9 @@
+{
+    "sa_credential_file":   "sa_credentials.json",
+    "google_sheet_id":      "123...YOUR_SHEET_ID_HERE",
+    "network_mask":         "192.168.0.0/24",
+    "test_locations": [
+        { "location": "kitzbuhel",  "id": 13071,    "operator": "Stadtwerke Kitzbuhel"},
+        { "location": "monaco",     "id": 9240,     "operator": "Monaco Telecom"}
+    ]
+}
